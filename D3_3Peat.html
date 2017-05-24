@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>TITLE GOES HERE</title>
+    <title>WE ON FIRE!</title>
+    <link rel="stylesheet" href="hotBoyz.css">
   </head>
   <body>
   <div>
@@ -18,6 +19,24 @@
   <p>Second paragraph</p>
 </li>
 </ol>
+<script type="text/javascript">
+// DOM API
+document.getElementById('some-id');
+// <li id="some-id">Unique element</li>
+document.getElementsByTagName('p').length;
+// 4
+var reds = document.getElementsByClassName('red');
+// [<p class="red">Red paragraph</p>]
+reds[0].innerText
 
+d3.select('p').size(); // select() only finds one
+// 1
+d3.selectAll('p').size(); // selectAll() finds all
+// 4
+var reds = d3.selectAll('.red');
+// [ > Array[1] ]
+reds.text();
+// "Red paragraph"
+</script>
   </body>
 </html>
